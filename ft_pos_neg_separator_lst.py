@@ -6,16 +6,16 @@ def ft_len_mass(mass):
 
 
 def ft_pos_neg_separator_lst(lst1):
-    pos_lst = []
-    neg_lst = []
+    pos = []
+    neg = []
     zero = []
     x = []
     for i in range(ft_len_mass(lst1)):
         if lst1[i] > 0:
-            pos_lst.append(lst1[i])
+            pos.append(lst1[i])
         elif lst1[i] < 0:
-            neg_lst.append(lst1[i])
+            neg.append(lst1[i])
         else:
             zero.append(lst1[i])
-    x = [pos_lst, zero, neg_lst]
+    x = [neg, zero, pos]
     return x
